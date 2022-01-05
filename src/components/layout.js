@@ -1,6 +1,5 @@
 import * as React from "react";
 import {Link} from "gatsby";
-import {Helmet} from "react-helmet";
 
 const Layout = ({location, title, children}) => {
     const rootPath = `${__PATH_PREFIX__}/`;
@@ -22,8 +21,6 @@ const Layout = ({location, title, children}) => {
     }
 
     return (
-        <Helmet><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"/></Helmet> +
-
         <div className="global-wrapper" data-is-root-path={isRootPath}>
             <header className="global-header">{header}</header>
             <main>{children}</main>
